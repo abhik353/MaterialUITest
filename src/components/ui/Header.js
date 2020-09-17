@@ -68,7 +68,10 @@ const useStyles = makeStyles(theme => ({
     borderRadius: "20px",
     marginLeft: "50px",
     marginRight: "25px",    
-    height: "30px"
+    height: "30px",
+    "&:hover":{
+      backgroundColor: theme.palette.secondary.light
+    }
   },
   logoContainer:{
     padding: 0,
