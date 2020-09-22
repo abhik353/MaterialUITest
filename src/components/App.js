@@ -17,7 +17,7 @@ function App() {
       <Router>
         <Header value={value} setValue={setValue} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex}/>
         <Switch>
-          <Route exact path='/' component={LandingPage} />
+          <Route exact path='/' component={ () => <LandingPage setValue={setValue} setSelectedIndex={setSelectedIndex}/>} />
           <Route exact path='/services' component={()=> <div>Services</div>} />
           <Route exact path='/customSoftware' component={()=> <div>custom</div>} />
           <Route exact path='/mobileApps' component={()=> <div>mobileApps</div>} />
@@ -26,7 +26,7 @@ function App() {
           <Route exact path='/contact' component={()=> <div>contact</div>} />
           <Route exact path='/estimate' component={()=> <div>estimate</div>} />
         </Switch>
-        <Footer value={value} setValue={setValue} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex}/>
+        <Footer  setValue={setValue}  setSelectedIndex={setSelectedIndex}/>
       </Router>
           {/*{[...new Array(100)]
             .map(

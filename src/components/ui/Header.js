@@ -179,6 +179,9 @@ const Header = ({value, setValue, selectedIndex, setSelectedIndex}) => {
             }
           }
           break
+        case '/estimate':
+          setValue(5)
+          break
         default:
           break
       }
@@ -200,7 +203,7 @@ const Header = ({value, setValue, selectedIndex, setSelectedIndex}) => {
                  onMouseOver={route.mouseOver}/>            
           ))}
         </Tabs>
-        <Button variant="contained" component={Link} to="/estimate" color="secondary" className={classes.button}>
+        <Button variant="contained" component={Link} to="/estimate" color="secondary" className={classes.button} onClick={() => setValue(5)}>
           Test
                       </Button>
         <Menu id="simple-menu"

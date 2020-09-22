@@ -27,6 +27,9 @@ export default createMuiTheme({
             lineHeight: 1.5
         },
         h3:{
+            fontFamily: 'Pacifico',
+            fontSize: "2.5rem",
+            color: mtCyan,
             fontWeight: 300
         },
         h4:{
@@ -40,6 +43,11 @@ export default createMuiTheme({
             fontSize: "1.25rem",
             fontWeight: 300,
             color: mtGrey
+        },
+        subtitle2:{
+            color:"white",
+            fontSize: "1.25rem",
+            fontWeight: 300
         },
         tab: {
             fontFamily: 'Raleway',
