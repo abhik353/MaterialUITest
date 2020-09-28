@@ -120,7 +120,7 @@ const Footer = ({value, setValue, selectedIndex, setSelectedIndex}) => {
             </Hidden>
            
             <img alt="footer logo" src={footerAdornment} className={classes.adornment}/>
-            <Grid container justify={"flex-end"} className={classes.socialContainer} spacing={3.5}>
+            <Grid container justify={"flex-end"} className={classes.socialContainer} spacing={3}>
                 <Grid item component={"a"} href="https://www.facebook.com" rel="noopener noreferrer" target="_blank" >
                     <img alt="facebook logo" src={facebook} className={classes.icon}/>
                 </Grid>

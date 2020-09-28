@@ -49,10 +49,16 @@ export default createMuiTheme({
             fontSize: "1.25rem",
             fontWeight: 300
         },
+        body1:{
+            fontSize: "1.25rem",
+            color: mtCyan,
+            fontWeight: 300
+        },
         tab: {
             fontFamily: 'Raleway',
             fontWeight: 700,
             fontSize: "1rem",
+            color:"white"
         },
         estimate: {
             fontFamily: "Pacifico",
