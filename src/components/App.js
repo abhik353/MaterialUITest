@@ -7,6 +7,8 @@ import Footer from './ui/Footer';
 import LandingPage from './LandingPage';
 import Services from './Services';
 import CustomSoftware from './CustomSoftware';
+import MobileApps from './MobileApps';
+import Contact from './Contact';
 
 function App() {
   
@@ -22,10 +24,10 @@ function App() {
           <Route exact path='/' component={ () => <LandingPage setValue={setValue} setSelectedIndex={setSelectedIndex}/>} />
           <Route exact path='/services' component={ () => <Services setValue={setValue} setSelectedIndex={setSelectedIndex}/>} />
           <Route exact path='/customSoftware' component={ () => <CustomSoftware setValue={setValue} setSelectedIndex={setSelectedIndex}/>} />
-          <Route exact path='/mobileApps' component={()=> <div>mobileApps</div>} />
+          <Route exact path='/mobileApps' component={ () => <MobileApps setValue={setValue} setSelectedIndex={setSelectedIndex}/>}/>
           <Route exact path='/info' component={()=> <div>info</div>} />
           <Route exact path='/about' component={()=> <div>about</div>} />
-          <Route exact path='/contact' component={()=> <div>contact</div>} />
+          <Route exact path='/contact' component={ () => <Contact setValue={setValue} setSelectedIndex={setSelectedIndex}/>}/>
           <Route exact path='/estimate' component={()=> <div>estimate</div>} />
         </Switch>
         <Footer  setValue={setValue}  setSelectedIndex={setSelectedIndex}/>
